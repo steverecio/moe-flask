@@ -1,5 +1,10 @@
 <html>
     <body>
-        <img src="http://i.imgur.com/jrtNP6s.jpg" width="600px; border-bottom: solid 1px black; padding-bottom: 10px; margin-bottom: 10px; clear: right;" />
+        <img id="moe_img" src="{{ moe_src }}" width="600px;" />
+        <script>
+         (function() {
+	     document.getElementById("moe_img").setAttribute("onClick", "window.location.reload()");
+         })();
+        </script>
     </body>
 </html>
